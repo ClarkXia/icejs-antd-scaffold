@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useRequest } from 'ice';
 import { Table } from 'antd';
-import styles from './index.module.scss';
+import styles from './index.module.less';
 
 export default function Home() {
   const { data, error, loading, request: fetchRepos } = useRequest({ url: '/api/getRepos' });
